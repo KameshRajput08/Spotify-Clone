@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding:  0;
+    margin: 0;
+}
+
+body {
+    background-color: antiquewhite;
+}
+
+.container {
+    min-height: 70vh;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 13px;
+    background-color: #000;
+    border-radius: 10px;
+    color: #fff;
+    display: flex;
+    margin: 20px auto;
+    padding: 20px;
+    width: 70%;
+    background: url(img/bg.jpg) no-repeat center center/cover;
+}
+
+nav {
+    font-family: 'ubuntu' , sans-serif;
+}
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    height: 50px;
+    background-color: black;
+    color: #fff;
+}
+nav ul li {
+    padding: 0 10px;
+}
+.logo img {
+    width: 65px;
+    padding: 0 10px;
+}
+.logo {
+    display: flex;
+    align-items: center; 
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.bottom {
+    position: sticky;
+    height: 80px;
+    background-color: black;
+    color: #fff;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+}
+
+#myprogressbar {
+    width: 80vw;
+    cursor: pointer ;
+}
+.icons {
+    margin-top: 6px;
+}
+.icons i {
+    padding: 0 5px;
+    cursor: pointer;
+}
+
+.songItem {
+     height: 40px;
+     display: flex;
+     width: 100%;
+     background-color: #fff;
+     color: #000;
+     margin: 13px 0;
+     border-radius: 34px;
+     align-items: center;
+     justify-content: space-between;
+}
+.songItem img {
+     width: 38px;
+     margin: 0 2px;
+     border-radius: 34px;
+}
+.timestamp {
+    margin: 0 15px;
+}
+.timestamp i {
+    cursor: pointer;
+}
+.songItem_container {
+    margin: 20px 0;    
+}
+.songInfo {
+    position: absolute;
+    left: 10vw;  
+}
+.songInfo img {
+    opacity: 0;
+    transition: opacity 0.4s ease-in;
+}
+
+@media(max-width: 480px){
+     .container{
+          font-size: 10px;
+     }
+     .songItem{
+         height: 30px;
+     }
+     .songItem img {
+        width: 28px;
+    }
+    .bottom{
+        height: 90px;
+    }
+    #myprogressbar{
+        position: absolute;
+        top: 10px;
+    }
+    .icons{
+        position: absolute;
+        bottom: 10px;
+    }
+    .songInfo{
+        position: absolute;
+        bottom: 45px;
+    }
+};
